@@ -1,14 +1,20 @@
 # sqlc gen json
 
-This repository creates a plugin for sqlc to output json
+This repository creates a plugin for sqlc that outputs all of the sql query schemas in json.
 
 ## how it works
-There's already a working plugin in the sqlc github repository that .
-However there is no official release wasm file for that plugin.
+There's already a working plugin in the sqlc github repository that generates a json schema.
+However there is no official release wasm file for that plugin (at least as far as I could find), so I released one here.
 
 All we need to do is clone the sqlc github repository and build the plugin go file with the correct WASM target.
 
+You can find an example of how the generated json looks like here: [codegen.json](./example/gen/codegen.json)
+
+For more information visit the [sqlc docs](https://docs.sqlc.dev/en/latest/).
+
 ## usage
+
+[example project](./example)
 
 ```yaml
 # file: sqlc.yaml
